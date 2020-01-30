@@ -5,27 +5,27 @@ namespace ConsoleApp10
     class Program
     {
 
-        static int[] liczniki=new int[3];
+        static int[] liczniki = new int[3];
         static void Etykieta(int index)
         {
-            Console.WriteLine("Etykieta "+liczniki[index-1]);
+            Console.WriteLine("Etykieta " + liczniki[index - 1]);
             liczniki[index - 1]++;
         }
         static int Suma()
         {
             int suma = 0;
-            for (int i = 0; i <liczniki.Length; i++)
+            for (int i = 0; i < liczniki.Length; i++)
             {
                 suma += liczniki[i];
             }
             return suma;
         }
-        static(int, string) Funkcja()
+        static (int, string) Funkcja()
         {
             return (0, "text");
         }
         static int cel = 100;
-       static void Main(string[] args)
+        static void Main(string[] args)
         {
             /*
            int a;
@@ -58,13 +58,13 @@ namespace ConsoleApp10
             srednia = (float)suma / (licznik-1);
             Console.WriteLine("srednia odleglosc: "+srednia);
             */
-            
-            // _ oznacza wyrzuć zmienna 
-           // (int numer, string tekst) = Funkcja();
 
-            while (Suma()!=cel+1)
+            // _ oznacza wyrzuć zmienna 
+            // (int numer, string tekst) = Funkcja();
+
+            while (Suma() != cel + 1)
             {
-                string tekst=Console.ReadLine();
+                string tekst = Console.ReadLine();
                 switch (tekst)
                 {
                     case "1":
@@ -81,7 +81,7 @@ namespace ConsoleApp10
 
 
                 }
-                
+
 
             }
 
